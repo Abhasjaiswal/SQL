@@ -46,3 +46,9 @@ TRUNCATE TABLE users;
 
 -- Let's see the data that we have just truncated
 SELECT * FROM users;
+
+-- Let's see how to drop a table 
+-- Drop is used to delete a table
+-- The syntax for dropping a table is as follows
+-- DROP TABLE table_name;
+DROP TABLE users;
