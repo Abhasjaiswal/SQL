@@ -1,0 +1,35 @@
+Constraints 
+Constraints in databases are rules or conditions that must be met for data to be inserted, updated, or deleted in a database table. They are used to enforce the integrity of the data stored in a database and to prevent data from becoming inconsistent or corrupted.
+
+1. NOT NULL
+The NOT NULL constraint ensures that a column cannot have a NULL value. This means that every row in the table must have a value for that column.
+
+2. UNIQUE 
+The UNIQUE constraint ensures that all values in a column are unique. This means that no two rows in the table can have the same value for that column.
+
+3. PRIMARY KEY
+The PRIMARY KEY constraint is a combination of the NOT NULL and UNIQUE constraints. It ensures that a column (or a combination of columns) has a unique value for each row in the table, and that the column cannot have a NULL value.
+
+4. FOREIGN KEY
+The FOREIGN KEY constraint is used to create a relationship between two tables. It ensures that the values in a column (or a combination of columns) in one table match the values in a column (or a combination of columns) in another table.
+
+5. CHECK
+The CHECK constraint is used to specify a condition that must be met for the data in a column to be valid. This condition can be any valid SQL expression.
+
+6. DEFAULT
+The DEFAULT constraint is used to specify a default value for a column. If a value is not provided for the column when a new row is inserted, the default value will be used.
+
+7. AUTO INCREMENT
+The AUTO INCREMENT constraint is used to automatically generate a unique value for a column when a new row is inserted. This is commonly used for primary key columns.
+
+
+REFERNTIAL ACTIONS 
+There are five referential actions that can be taken when a row in a parent table is deleted or updated:
+
+1. CASCADE: When a row in the parent table is deleted or updated, the corresponding rows in the child table are also deleted or updated.
+
+2. SET NULL: When a row in the parent table is deleted or updated, the corresponding rows in the child table have their foreign key columns set to NULL.
+
+3. SET DEFAULT: When a row in the parent table is deleted or updated, the corresponding rows in the child table have their foreign key columns set to the default value specified for the column.
+
+4. RESTRICT: Prevents the deletion or update of a row in the parent table if there are corresponding rows in the child table.
